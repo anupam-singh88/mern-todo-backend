@@ -19,7 +19,10 @@ router.delete('/deletenote/:id', deleteNoteController)
 
 router.get('/', (req, res) => {
     // console.log(req.body)
-    res.send(req.body);
+    // res.send(req.body);
+    res.json({
+        message: 'Welcome to our API'
+    })
 })
 
 module.exports = router
