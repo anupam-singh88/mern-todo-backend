@@ -17,6 +17,15 @@ router.put('/updatenote/:id', updateNoteController)
 //* route to delete note
 router.delete('/deletenote/:id', deleteNoteController)
 
+//router-another-routes
+
+router.get('/add', (req, res) => {
+    // console.log(req.body)
+    // res.send(req.body);
+    res.json({
+        message: 'another route'
+    })
+})
 router.get('/', (req, res) => {
     // console.log(req.body)
     // res.send(req.body);
